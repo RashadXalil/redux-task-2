@@ -118,7 +118,7 @@ function Drivers() {
                   style={{
                     backgroundColor: driver.permanentNumber
                       ? 'white'
-                      : '#C41E3A',
+                      : '#fcbe00',
                   }}
                 >
                   <TableCell component="th" scope="row">
@@ -131,8 +131,6 @@ function Drivers() {
                     <a
                       style={{
                         color: 'black',
-                        fontWeight: 'bold',
-                        textDecoration: 'underline',
                       }}
                       target="_blank"
                       rel="noreferrer"
