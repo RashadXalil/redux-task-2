@@ -2,7 +2,7 @@ import {
   fetchDriversError,
   fetchDriversPending,
   fetchDriversSuccess,
-} from '../redux/actions/drivers.actions'
+} from '../redux/actions/driver.actions'
 
 function fetchDrivers() {
   return function (dispatch) {

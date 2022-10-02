@@ -2,7 +2,7 @@ import {
   FETCH_DRIVERS_PENDING,
   FETCH_DRIVERS_SUCCESS,
   FETCH_DRIVERS_ERROR,
-} from '../actions/drivers.actions'
+} from '../actions/driver.actions'
 
 const initialState = {
   pending: false,
