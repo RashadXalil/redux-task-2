@@ -34,9 +34,9 @@ function Drivers() {
   const add = (item) => {
     if (!favorites.find((x) => x.driverId === item.driverId)) {
       dispatch({ type: 'ADD_TO_FAVORITE', payload: item })
-      notify()
+      toast.success('Added')
     } else {
-      notifyError()
+      toast.error('Already Exist !')
     }
   }
 
@@ -57,27 +57,6 @@ function Drivers() {
         </div>
       </div>
     )
-  }
-
-  const notify = () => {
-    toast.success('Driver added to favorites successfully!', {
-      duration: 2000,
-      position: 'bottom-right',
-      theme: {
-        primary: 'green',
-        secondary: 'black',
-      },
-    })
-  }
-  const notifyError = () => {
-    toast.error('This driver is already added to favorites!', {
-      duration: 2000,
-      position: 'bottom-right',
-      theme: {
-        primary: 'green',
-        secondary: 'black',
-      },
-    })
   }
   return (
     <div className="container">
